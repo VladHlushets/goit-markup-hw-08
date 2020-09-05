@@ -1,0 +1,103 @@
+
+
+
+
+/* цвет основного шрифта #212121; */
+/* вторичный цвет #757575; */
+/* белый цвет #FFFFFF; */
+/* акцент "Лого" #2196F3; */
+/* вторичный цвет фона #F5F4FA; */
+
+
+
+/* Вторая секция */
+
+
+/* Заголовки секций, 3-я секция */
+
+
+
+
+
+/* Заголовки команды */
+
+
+
+/* специальность команды */
+
+
+
+
+
+/* ------ */
+/* .description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.about-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+} */
+
+/* -------- */
+
+
+/* Постоянные клиенты */
+
+
+
+/* Footer */
+
+
+
+
+
+
+
+/* Modalka */
+
+
+
+
+
+.checkbox {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.checkbox-privacy {
+  display: inline-block;
+}
+
+.checkbox-privacy::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  vertical-align: middle;
+  margin: 0 8px 4px 0px;
+}
+
+.checkbox:checked + .checkbox-privacy::before{
+  background-color: var(--accent-text-color);
+  background-image: url('../images/icon_check.svg');
+  border-width: 0;
+  border-radius: 2px;
+}
+
+
