@@ -1,5 +1,18 @@
 .join-item {
-  margin-right: 93px;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   .join {
     font-family: 'Roboto', sans-serif;
@@ -43,5 +56,3 @@
     background-color: $accent-text-color;
   }
 }
-
-

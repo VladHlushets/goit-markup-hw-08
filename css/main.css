@@ -79,15 +79,9 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -145,7 +139,6 @@ body {
 }
 
 .logo {
-  margin-right: 85px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -296,12 +289,15 @@ body {
 }
 
 .default-section-aboutus {
-  padding-top: 94px;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.default-section-aboutus .about-us .about-us-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .default-section-aboutus {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-headlines {
@@ -311,6 +307,12 @@ body {
   line-height: 1.142;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-headlines {
+    text-align: center;
+  }
 }
 
 .section-headlines .title-label {
@@ -335,6 +337,13 @@ body {
   background-color: #F5F4FA;
   margin-bottom: 25px;
   padding: 25px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-item_img {
+    margin-bottom: 30px;
+    width: 354px;
+  }
 }
 
 .device-info {
@@ -382,9 +391,6 @@ body {
 }
 
 .all-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -405,10 +411,17 @@ body {
 }
 
 .all-team-command {
+  max-width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .all-team-command {
+    width: 450px;
+  }
 }
 
 .all-team-command .all-team-photo {
@@ -419,6 +432,11 @@ body {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 0;
+}
+
+.all-team-command img {
+  width: 100%;
+  height: auto;
 }
 
 .all-team-command .professions-team {
@@ -511,8 +529,27 @@ body {
 }
 
 .footer {
-  padding: 60px 0 60px 214px;
+  padding: 60px 0 60px;
   background: #2f303a;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 60px 0 60px 214px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer .information-link {
@@ -524,7 +561,15 @@ body {
 }
 
 .adress-container {
-  margin-right: 69px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .adress-container {
+    width: 50%;
+  }
 }
 
 .adress-container .logo-footer {
@@ -553,7 +598,26 @@ body {
 }
 
 .join-item {
-  margin-right: 93px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .join-item {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-item {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-item {
+    margin-right: 93px;
+  }
 }
 
 .join-item .join {
@@ -619,10 +683,23 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin: 0 auto;
+  }
+}
+
+.join-footer {
+  padding: 0px 15px;
 }
 
 .join-footer .footer-input {
   margin-right: 13px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   background: #2f303a;
@@ -633,6 +710,8 @@ body {
 }
 
 .btn-subscribe {
+  display: block;
+  margin: 0 auto;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
