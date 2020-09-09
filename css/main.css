@@ -625,6 +625,7 @@ body {
 }
 
 .our-patners .item {
+  margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
