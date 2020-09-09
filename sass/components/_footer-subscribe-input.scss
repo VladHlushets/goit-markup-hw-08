@@ -9,7 +9,10 @@
   color: $white-color;
   margin-bottom: 20px;
 
-  text-align: center;
+
+  @media screen and (max-width:1199px) {
+      text-align: center;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -20,20 +23,31 @@
 
 
 .join-footer {
-  // display: flex;
   padding: 0px 15px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 0;
+  }
 
   .footer-input {
     margin-right: 13px;
     margin-bottom: 20px;
     width: 100%;
-    // width: 358px;
     height: 50px;
     padding-left: 16px;
     background: $background-footer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 }
 

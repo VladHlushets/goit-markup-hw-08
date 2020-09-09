@@ -3,6 +3,10 @@
   justify-content: center;
   margin-bottom: 30px;
 
+  @media screen and (min-width:480px) and (max-width: 1199px) {
+    margin-bottom: 24px;
+  }
+
   .social-icons-item:not(:last-child) {
     margin-right: 10px;
   }
