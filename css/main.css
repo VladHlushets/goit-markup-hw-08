@@ -165,6 +165,40 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
