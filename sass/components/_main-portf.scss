@@ -14,9 +14,9 @@
 }
 
 .button-list {
-  justify-content: center;
+  // justify-content: center;
   // display: flex;
-  text-align: center;
+  // text-align: center;
   margin-bottom: 50px;
   
 
@@ -52,8 +52,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media screen and (min-width:480px) {
-    width: 100%;
+  // @media screen and (min-width:480px) {
+  //   // width: 100%;
+  // }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -63,13 +69,13 @@
   box-sizing: border-box;
   margin-bottom: 30px;
 
-  @media screen and (min-width:480px) {
-    width: 100%;
-  }
+  // @media screen and (min-width:480px) {
+  //   width: 100%;
+  // }
 
-  @media screen and (min-width:768px) {
-    width: 354px;
-  }
+  // @media screen and (min-width:768px) {
+  //   width: 354px;
+  // }
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -143,7 +149,58 @@
   display: block;
   // width: 370px;
 
-  @media screen and (min-width: 480px) {
+  // @media screen and (min-width: 480px) {
+  //   width: 100%;
+  // }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    left: 0;
     width: 100%;
+    background-color: $white-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
 }

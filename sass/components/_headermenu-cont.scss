@@ -1,9 +1,37 @@
 .menu-list {
-  // display: flex;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 80px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 305px;
+  }
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 45px;
+  }
+}
+
+.mob-link {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-right: 38px;
+  }
 }
 
 .menu-link,
@@ -16,6 +44,11 @@
   color: $primary-text-color;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.666;
+  }
 
   &:hover,
   &:focus {
@@ -42,8 +75,6 @@
   vertical-align: middle;
 }
 
-
-
 .menu-link::after {
   content: '';
   position: absolute;
@@ -58,5 +89,5 @@
 }
 
 .link .mail {
-  margin-right: 50px;
+  // margin-right: 50px;
 }

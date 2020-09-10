@@ -16,16 +16,14 @@
             <span class="web-logo">Web</span>
             Studio
           </a>
+          <div class="menu-container" id="menu-container" data-menu>
           <ul class="list menu-list">
             <li class="menu-item"><a href="./index.html" class="menu-link">Студия</a></li>
             <li class="menu-item current"><a href="" class="menu-link">Портфолио</a></li>
             <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
           </ul>
-        </nav>
-
-        <!--Contacs-->
         <ul class="list link flexbox">
-          <li>
+          <li class="mob-link">
             <a href="mailto:info@devstudio.com" class="contacts-link mail">
               <svg class="contact-icon" width="16" height="11.2">
                 <use href="./images/iconsoptimaze/spritegood.svg#icon-envelope"></use>
@@ -40,6 +38,14 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/mobtabsvg/mobile.svg#icon-menu"></use>
+          <use class="icon-cross" href="./images/mobtabsvg/mobile.svg#icon-close"></use>
+        </svg>
+      </button>
+      </nav>
       </div>
     </header>
 
@@ -130,6 +136,7 @@
       </ul>
     </main>
     <footer class="footer">
+      <div class="footer-content">
       <div class="adress-container">
         <a href="./index.html" class="logo logo-footer">
           <span class="web-logo">Web</span>
@@ -196,6 +203,9 @@
       </div>
       </div>
     </div>
+  </div>
     </footer>
   </body>
+
+  <script src="./js/menu.js"></script>
 </html>
