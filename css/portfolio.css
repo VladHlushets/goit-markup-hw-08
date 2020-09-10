@@ -44,8 +44,15 @@
 }
 
 .main {
-  padding-top: 93px;
-  padding-bottom: 93px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding-top: 93px;
+    padding-bottom: 93px;
+  }
 }
 
 .button-list .btn {
@@ -60,10 +67,33 @@
 
 .button-list {
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
 }
 
 .button-list-item {
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list-item {
+    margin-bottom: 0px;
+  }
 }
 
 .button-list-item:last-child {
@@ -199,6 +229,7 @@
 
 .img-class {
   display: block;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
